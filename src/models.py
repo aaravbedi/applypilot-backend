@@ -3,8 +3,6 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import List, Optional
 
-
-@dataclass
 class JobPosting:
     id: str
     title: str
@@ -16,8 +14,6 @@ class JobPosting:
     scraped_at: datetime
     tags: List[str] = field(default_factory=list)
 
-
-@dataclass
 class Application:
     id: str
     job_id: str
@@ -27,8 +23,6 @@ class Application:
     created_at: datetime
     updated_at: datetime
 
-
-@dataclass
 class Contact:
     id: str
     name: str
